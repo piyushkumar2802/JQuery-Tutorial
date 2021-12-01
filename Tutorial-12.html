@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add & Remove class</title>
+
+    <style>
+        .second{
+            background-color: black;
+            color:#fff;
+        }
+        .first{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add & Remove class</h1>
+    <p>class Method</p>
+    <div id="box">
+        <p>three method of class selector</p>
+        <ul>
+            <li>Add class()</li>
+            <li>Remove class()</li>
+            <li>Toggle class()</li>
+        </ul>
+    </div>
+    <button id="addbtn">Add Class</button>
+    <button id="removebtn">Remove Class</button>
+    <button id="togglebtn">Toggle Class</button>
+
+    <script src="./jQuery-file/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#addbtn").click(function(){
+                $("#box").addClass("first");
+            });
+
+            $("#removebtn").click(function(){
+                $("#box").removeClass("first");
+            });
+
+            $("#togglebtn").click(function(){
+                $("#box").toggleClass("second");
+            });
+        });
+    </script>
+</body>
+</html>

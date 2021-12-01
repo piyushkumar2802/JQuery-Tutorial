@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic syntex</title>
+</head>
+<body>
+    <h1>basic syntex</h1>
+    <div id="text-1">
+        <h2>text box 1</h2>
+    </div>
+
+    <div id="text-2">
+        <h2>text box 2</h2>
+    </div>
+
+    <div id="text-3">
+        <h2>text box 3</h2>
+    </div>
+
+    <script src="jQuery-file/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var a=$("#text-1").html();
+            console.log('text 1 run');
+        });
+        
+        $(document).ready(function(){
+            var a=$("#text-2").html();
+            console.log('text 2 run');
+        });
+        $(document).ready(function(){
+            var a=$("#text-3").html();
+            console.log('text 3 run');
+        });
+
+    </script>
+</body>
+</html>

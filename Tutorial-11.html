@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Method</title>
+</head>
+<body>
+    <h1 class="name">Set Mehod</h1>
+    <div id="box" class="test">
+        <h2>test box</h2>
+        <p>this is test box in this box style in jquery. 
+        the set method is use to text attribute value change then use to set method</p>
+    </div><br>
+    <button id="checkbtn">Set value</button>
+
+    <script src="./jQuery-file/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#checkbtn").click(function(){
+                $("#box h2").text("hello piyush");
+                $("#box p").html(
+                "<b>Text(),Html(),Attr(),val()</b>"
+                );
+                $("#box h2").attr("color","red");
+                $(".name").val("JQuery");
+            });
+        });
+    </script>
+</body>
+</html>

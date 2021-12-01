@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mause Event</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            background: pink;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>mause event</h1>
+    <div id="box" class="text">
+        <h2>click mause event</h2>
+        <p>lorem dolor sits amet constetur adition </p>
+    </div>
+
+    <script src="jQuery-file/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#box').click(function(){
+                $('#box').css('color','red')
+                $('#box').css('background-color','green')
+            });
+        });
+    </script>
+</body>
+</html>
